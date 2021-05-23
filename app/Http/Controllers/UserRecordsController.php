@@ -36,6 +36,18 @@ class UserRecordsController extends Controller
      */
     public function store(Request $request)
     {
+        // Also we can use server side validation from this code but right now I am not use
+       /*  $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required|unique:user_records',
+            'avatar'  => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:512',
+            'date_joining' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            return $this->sendError($validator->errors()->first(), $this->statusArr['validation']);
+        } */
+
         $file = $request->file('avatar');
         $destinationPath = public_path() . '/avatar/';
         $image = time() . $file->getClientOriginalName();
