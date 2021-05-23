@@ -39,7 +39,11 @@
 
 					@foreach($records as $user)
 					<tr>
-						<td>{{$user->avatar ?? ''}}</td>
+						<td>
+							<a href="#">
+								<img src="{{asset(''.$user->avatar)}}" alt="" height=80 width=80>
+							</a>
+						</td>
 						<td>{{$user->name ?? ''}}</td>
 						<td>{{$user->email ?? ''}}</td>
 						<td>
