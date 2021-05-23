@@ -3,7 +3,7 @@ Basic CRUD Operation with Laravel.
 
 ## What's this repo about
 
-Simply, it's a basic create, read, update and delete operation with Laravel 5.5 and AdminLTE. Plus, it's like single page application, 
+Simply, it's a basic create, read, update and delete operation with Laravel. Plus, it's like single page application, 
 we use Bootstrap modal window to create,update and delete data. 
 
 ## Requirements 
